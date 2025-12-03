@@ -2,6 +2,7 @@
 
 import { X } from "lucide-react";
 import { useState, useEffect, useMemo } from "react";
+import LottieCard from "./components/LottieCard";
 
 export default function Home() {
   const [showNotification, setShowNotification] = useState(false);
@@ -165,29 +166,14 @@ export default function Home() {
 
           {/* Cards Grid */}
           <div className="grid md:grid-cols-2 gap-8">
-            {/* Card 1 - For Issuers */}
-            <div className="bg-gradient-to-br from-[#1a3a3a] to-[#0f2a2a] rounded-3xl p-8 relative overflow-hidden">
-              <div className="relative z-10">
-                <div className="inline-block px-3 py-1 bg-[#449fa5]/20 rounded-full mb-6">
-                  <span className="text-sm text-[#449fa5]">For Issuers</span>
-                </div>
-                <h3 className="text-3xl font-light mb-4">
-                  Complete ecosystems for<br />
-                  tokenized assets
-                </h3>
-                <p className="text-gray-400 leading-relaxed">
-                  Tap into onchain markets with an institutional-grade tokenization stack that goes beyond issuance. Theo powers financial products with built-in distribution, liquidity, and interoperability.
-                </p>
-              </div>
-              <div className="absolute right-0 bottom-0 w-64 h-64 opacity-20">
-                <div className="absolute w-full h-full rounded-full border-2 border-[#449fa5]/30" />
-                <div className="absolute inset-8 rounded-full border-2 border-[#449fa5]/40" />
-                <div className="absolute inset-16 rounded-full border-2 border-[#449fa5]/50" />
-              </div>
-            </div>
-
-            {/* Card 2 - Placeholder */}
-            <div className="bg-[#1a2a3a] rounded-3xl p-8 flex items-center justify-center min-h-[300px]">
+            <LottieCard
+              badge="For Issuers"
+              title="Complete ecosystems for tokenized assets"
+              description="Tap into onchain markets with an institutional-grade tokenization stack that goes beyond issuance. Theo powers financial products with built-in distribution, liquidity, and interoperability."
+              animationPath="/iAtwaAlMxMiMYxB3HyEPbkDjx0.json"
+            />
+            
+            <div className="bg-[#1a2a3a] rounded-3xl p-8 flex items-center justify-center min-h-[400px]">
               <div className="text-center text-gray-600">
                 <div className="text-4xl mb-2">•••</div>
                 <p className="text-sm">More features coming soon</p>
