@@ -165,21 +165,12 @@ export default function Home() {
           </p>
 
           {/* Cards Grid */}
-          <div className="grid md:grid-cols-2 gap-8">
-            <LottieCard
-              badge="For Issuers"
-              title="Complete ecosystems for tokenized assets"
-              description="Tap into onchain markets with an institutional-grade tokenization stack that goes beyond issuance. Theo powers financial products with built-in distribution, liquidity, and interoperability."
-              animationPath="/iAtwaAlMxMiMYxB3HyEPbkDjx0.json"
-            />
-            
-            <div className="bg-[#1a2a3a] rounded-3xl p-8 flex items-center justify-center min-h-[400px]">
-              <div className="text-center text-gray-600">
-                <div className="text-4xl mb-2">•••</div>
-                <p className="text-sm">More features coming soon</p>
-              </div>
-            </div>
-          </div>
+          <LottieCard
+            badge="For Issuers"
+            title="Complete ecosystems for tokenized assets"
+            description="Tap into onchain markets with an institutional-grade tokenization stack that goes beyond issuance. Theo powers financial products with built-in distribution, liquidity, and interoperability."
+            animationPath="/iAtwaAlMxMiMYxB3HyEPbkDjx0.json"
+          />
         </div>
       </section>
 
