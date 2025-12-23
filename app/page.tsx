@@ -118,24 +118,24 @@ export default function Home() {
           <div className="absolute inset-0 bg-gradient-to-b from-[#1a2332]/60 via-[#1a2332]/70 to-[#0c0e11]" />
         </div>
 
-        <div className="relative z-10 max-w-7xl mx-auto px-6 text-left w-full">
-          <div className="max-w-2xl">
-            <h1 className="text-6xl md:text-7xl font-light mb-6 leading-tight">
+        <div className="relative z-10 max-w-[944px] mx-auto px-6 text-left w-full">
+          <div className="max-w-2xl flex flex-col gap-8">
+            <h1 className="text-6xl md:text-7xl font-light leading-tight">
               Reimagining<br />
               Global Markets
             </h1>
-            <p className="text-lg text-gray-300 mb-8 max-w-xl">
+            <p className="text-lg text-white leading-relaxed max-w-xl">
               Theo is a full-stack platform connecting onchain capital to<br />
               global financial markets.
             </p>
             <div className="flex gap-4">
-              <button className="px-6 py-3 bg-[#2a3f5f] text-white rounded-lg hover:bg-[#3a4f6f] transition-colors">
+              <button className="px-6 py-3 bg-white/10 backdrop-blur-[9px] text-white rounded-full hover:bg-white/20 transition-colors">
                 Explore Theo
               </button>
-              <button className="px-6 py-3 text-white flex items-center gap-2 hover:text-gray-300 transition-colors">
+              <button className="px-6 py-3 text-white flex items-center gap-2 hover:text-gray-300 transition-colors bg-transparent rounded-full">
                 Get in Touch
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
-                  <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <path d="M5 12h14M12 5l7 7-7 7"/>
                 </svg>
               </button>
             </div>
