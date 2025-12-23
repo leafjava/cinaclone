@@ -144,20 +144,25 @@ export default function Home() {
 
         {/* Notification Banner */}
         {!showNotification && (
-          <div className="absolute bottom-8 right-8 z-20 bg-[#1a2a3a] backdrop-blur-xl border border-white/10 rounded-2xl p-6 max-w-sm">
-            <button
-              onClick={() => setShowNotification(true)}
-              className="absolute top-4 right-4 text-gray-400 hover:text-white"
+          <div className="absolute bottom-8 right-8 z-20 bg-white/10 backdrop-blur-[4px] rounded-lg p-3 pl-3 pr-2.5 pt-3 pb-0.5 max-w-[464px] shadow-[0px_4px_8px_0px_rgba(0,0,0,0.1)]">
+            <div className="flex items-center justify-between mb-2">
+              <p className="text-[15px] text-white font-normal">Announcing our $20M Raise</p>
+              <button
+                onClick={() => setShowNotification(true)}
+                className="text-black hover:text-gray-700 ml-4"
+              >
+                <X size={20} />
+              </button>
+            </div>
+            <a 
+              href="#" 
+              className="flex items-center gap-2 text-white hover:text-gray-200 transition-colors opacity-90 pb-2"
             >
-              <X size={20} />
-            </button>
-            <h3 className="text-lg font-light mb-2">Announcing our $20M Raise</h3>
-            <button className="text-[#449fa5] flex items-center gap-2 mt-4 hover:text-[#55afb5] transition-colors">
-              Read More
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
-                <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+              <span className="text-[15px]">Read More</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
               </svg>
-            </button>
+            </a>
           </div>
         )}
       </section>
