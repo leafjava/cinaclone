@@ -376,33 +376,35 @@ export default function Home() {
       {/* Announcement Card */}
       <section className="py-12 bg-[#0c0e11]">
         <div className="max-w-[1024px] mx-auto px-6">
-          <div className="bg-gradient-to-br from-[#0d3838] via-[#0a2a2a] to-[#082222] rounded-[24px] p-10 md:p-14 relative overflow-hidden min-h-[320px] flex items-center">
-            {/* 右侧图片 - 使用announce1.avif，但需要显示为圆形logo */}
-            <div className="absolute right-12 top-1/2 -translate-y-1/2 w-[280px] h-[280px] md:w-[320px] md:h-[320px]">
-              <div className="relative w-full h-full">
-                {/* 背景渐变装饰 */}
-                <div className="absolute inset-0 bg-gradient-to-br from-[#2a6565] to-[#1a4545] rounded-full opacity-40 blur-2xl"></div>
-                {/* Logo图片 */}
-                <img 
-                  src="/announce1.avif" 
-                  alt="Theo Logo"
-                  className="relative w-full h-full object-contain"
-                />
-              </div>
+          <div 
+            className="bg-[#01161b] rounded-[10px] p-8 md:p-10 relative overflow-hidden border border-black flex flex-col justify-between"
+            style={{ aspectRatio: '2.53083' }}
+          >
+            {/* 右侧背景图片 */}
+            <div className="absolute top-0 right-0 bottom-0 left-0 pointer-events-none">
+              <img 
+                src="/announce1.avif" 
+                alt=""
+                className="w-full h-full object-cover"
+              />
             </div>
 
-            {/* 左侧内容 */}
-            <div className="relative z-10 max-w-[480px]">
-              <h2 className="text-4xl md:text-[44px] font-light mb-5 leading-[1.2] text-white">
-                Announcing our<br />
-                $20M Raise
-              </h2>
-              <p className="text-gray-300 mb-7 leading-relaxed text-[15px] md:text-base">
-                We've raised $20m led by Hack VC and Anthos Capital, with participation from Manifold Trading, Mirana Ventures, Metalayer Ventures, MEXC, SCB, Amber Group, and Selini Capital.
-              </p>
-              <button className="px-7 py-2.5 border border-white/70 rounded-full text-white text-sm hover:bg-white/10 transition-all font-normal backdrop-blur-sm">
-                Read more
-              </button>
+            {/* 内容区域 */}
+            <div className="relative z-10 flex flex-col justify-between h-full">
+              {/* 标题和描述 */}
+              <div className="flex flex-col gap-6 max-w-[480px]">
+                <h2 className="text-4xl md:text-[44px] font-light leading-[1.2] text-white">
+                  Announcing our $20M Raise
+                </h2>
+                <div className="flex flex-col gap-4">
+                  <p className="text-white/90 leading-relaxed text-[15px] md:text-base">
+                    We've raised $20m led by Hack VC and Anthos Capital, with participation from Manifold Trading, Mirana Ventures, Metalayer Ventures, MEXC, SCB, Amber Group, and Selini Capital.
+                  </p>
+                  <button className="self-start px-7 py-2.5 border-[0.8px] border-white rounded-full text-white text-sm hover:bg-white/10 transition-all font-normal backdrop-blur-[20px] bg-transparent">
+                    Read more
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
