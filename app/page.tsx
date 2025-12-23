@@ -274,14 +274,14 @@ export default function Home() {
                   >
                     {/* thBILL */}
                     <a href="#" className="flex items-start gap-3 p-3 hover:bg-white/5 rounded-[10px] transition-colors">
-                      <div className="w-10 h-10 bg-[#c41d54]/20 rounded-md flex items-center justify-center flex-shrink-0">
-                        <svg width="20" height="20" viewBox="0 0 22 27" fill="none" className="text-black">
+                      <div className="w-10 h-10 bg-[#c41d54]/30 rounded-md flex items-center justify-center flex-shrink-0">
+                        <svg width="20" height="20" viewBox="0 0 22 27" fill="none" className="text-[#c41d54]">
                           <text x="50%" y="50%" dominantBaseline="middle" textAnchor="middle" fontSize="16" fontWeight="bold" fill="currentColor">₮</text>
                         </svg>
                       </div>
                       <div className="flex-1">
                         <p className="text-white text-sm font-normal mb-0.5">thBILL</p>
-                        <p className="text-[#8a8a8a] text-xs leading-relaxed">Theo Short Duration US Treasury Fund</p>
+                        <p className="text-[#b0b0b0] text-xs leading-relaxed">Theo Short Duration US Treasury Fund</p>
                       </div>
                     </a>
                   </div>
