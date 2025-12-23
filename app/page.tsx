@@ -80,9 +80,9 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       {/* Navigation */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-[#1a2332]/80 backdrop-blur-xl border-b border-white/10">
-        <div className="max-w-7xl mx-auto px-6 py-4">
-          <div className="flex items-center justify-between">
+      <nav className="fixed top-7 left-1/2 -translate-x-1/2 z-50 w-[944px]">
+        <div className="bg-white/10 backdrop-blur-[12px] border border-white/10 rounded-[10px] shadow-[0px_4px_8px_0px_rgba(0,0,0,0.1)] h-[72px] px-6 pl-6 pr-5">
+          <div className="flex items-center justify-between h-full">
             <div className="flex items-center gap-2">
               <div className="w-8 h-8 rounded-full bg-white flex items-center justify-center p-1">
                 <svg viewBox="0 0 24 24" fill="none" className="w-full h-full">
@@ -91,11 +91,11 @@ export default function Home() {
               </div>
               <span className="text-xl font-light text-white">theo</span>
             </div>
-            <div className="hidden md:flex items-center gap-8">
-              <a href="#" className="text-sm text-gray-300 hover:text-white transition-colors">About</a>
-              <a href="#" className="text-sm text-gray-300 hover:text-white transition-colors">Learn</a>
-              <a href="#" className="text-sm text-gray-300 hover:text-white transition-colors">Products</a>
-              <button className="px-6 py-2.5 bg-white text-[#1a2332] rounded-full text-sm font-medium hover:bg-gray-100 transition-colors">
+            <div className="flex items-center gap-2">
+              <a href="#" className="px-4 py-2 text-sm text-white hover:text-gray-300 transition-colors opacity-95 rounded-full">About</a>
+              <a href="#" className="px-4 py-2 text-sm text-white hover:text-gray-300 transition-colors opacity-95 rounded-full">Learn</a>
+              <a href="#" className="px-4 py-2 text-sm text-white hover:text-gray-300 transition-colors opacity-95 rounded-full">Products</a>
+              <button className="px-6 py-2.5 bg-white text-black rounded-full text-sm font-normal hover:bg-gray-100 transition-colors backdrop-blur-[10px] ml-2">
                 Launch app
               </button>
             </div>
