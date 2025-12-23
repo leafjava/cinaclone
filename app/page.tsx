@@ -470,11 +470,11 @@ export default function Home() {
       </section>
 
       {/* Stay Up To Date */}
-      <section className="py-12 bg-[#0c0e11]">
-        <div className="max-w-[1024px] mx-auto px-6">
-          <div className="bg-gradient-to-r from-[#1a6565] via-[#1d6868] to-[#207070] rounded-[24px] p-8 md:p-10 flex flex-col md:flex-row items-center justify-between gap-6">
-            <h3 className="text-3xl md:text-[40px] font-light text-white leading-tight">Stay up to date</h3>
-            <button className="px-8 py-3 bg-white text-black rounded-full font-normal text-[15px] hover:bg-gray-100 transition-all whitespace-nowrap">
+      <section className="py-10 bg-[#0c0e11]">
+        <div className="max-w-[1024px] mx-auto px-10">
+          <div className="bg-[#007f8e] rounded-[10px] px-8 py-5 flex flex-row items-center justify-between gap-6">
+            <h3 className="text-3xl md:text-[32px] font-normal text-white leading-tight">Stay up to date</h3>
+            <button className="px-8 py-3 bg-white text-black rounded-full font-normal text-[15px] hover:bg-gray-100 transition-all whitespace-nowrap backdrop-blur-[10px]">
               Follow Us On X
             </button>
           </div>
