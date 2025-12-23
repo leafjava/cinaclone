@@ -111,7 +111,11 @@ export default function Home() {
               <span className="text-xl font-light text-white">theo</span>
             </div>
             <div className="flex items-center gap-2">
-              <div className="relative" ref={dropdownRef}>
+              <div 
+                className="relative" 
+                ref={dropdownRef}
+                onMouseLeave={() => setShowAboutDropdown(false)}
+              >
                 <button 
                   onMouseEnter={() => setShowAboutDropdown(true)}
                   className="px-4 py-2 text-sm text-white hover:text-gray-300 transition-colors opacity-95 rounded-full"
@@ -122,9 +126,8 @@ export default function Home() {
                 {/* Dropdown Menu */}
                 {showAboutDropdown && (
                   <div 
-                    className="absolute top-full left-0 mt-2 bg-black/30 backdrop-blur-[10px] border border-white/10 rounded-[10px] shadow-[0px_0.602187px_0.602187px_-1.25px_rgba(0,0,0,0.04),0px_2.28853px_2.28853px_-2.5px_rgba(0,0,0,0.03),0px_10px_10px_-3.75px_rgba(0,0,0,0.01)] p-2 flex flex-col gap-0.5 min-w-[320px]"
+                    className="absolute top-full left-0 mt-2 bg-black/80 backdrop-blur-[10px] border border-white/10 rounded-[10px] shadow-[0px_0.602187px_0.602187px_-1.25px_rgba(0,0,0,0.04),0px_2.28853px_2.28853px_-2.5px_rgba(0,0,0,0.03),0px_10px_10px_-3.75px_rgba(0,0,0,0.01)] p-2 flex flex-col gap-0.5 min-w-[320px]"
                     onMouseEnter={() => setShowAboutDropdown(true)}
-                    onMouseLeave={() => setShowAboutDropdown(false)}
                   >
                     {/* Contact Us */}
                     <a href="#" className="flex items-start gap-3 p-3 hover:bg-white/5 rounded-[10px] transition-colors">
@@ -183,7 +186,11 @@ export default function Home() {
                   </div>
                 )}
               </div>
-              <div className="relative" ref={learnDropdownRef}>
+              <div 
+                className="relative" 
+                ref={learnDropdownRef}
+                onMouseLeave={() => setShowLearnDropdown(false)}
+              >
                 <button 
                   onMouseEnter={() => setShowLearnDropdown(true)}
                   className="px-4 py-2 text-sm text-white hover:text-gray-300 transition-colors opacity-95 rounded-full"
@@ -194,9 +201,8 @@ export default function Home() {
                 {/* Learn Dropdown Menu */}
                 {showLearnDropdown && (
                   <div 
-                    className="absolute top-full left-0 mt-2 bg-black/30 backdrop-blur-[10px] border border-white/10 rounded-[10px] shadow-[0px_10px_20px_0px_rgba(0,0,0,0.05)] p-2 flex flex-col gap-0.5 min-w-[320px]"
+                    className="absolute top-full left-0 mt-2 bg-black/80 backdrop-blur-[10px] border border-white/10 rounded-[10px] shadow-[0px_10px_20px_0px_rgba(0,0,0,0.05)] p-2 flex flex-col gap-0.5 min-w-[320px]"
                     onMouseEnter={() => setShowLearnDropdown(true)}
-                    onMouseLeave={() => setShowLearnDropdown(false)}
                   >
                     {/* Blog */}
                     <a href="#" className="flex items-start gap-3 p-3 hover:bg-white/5 rounded-[10px] transition-colors">
