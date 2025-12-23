@@ -413,22 +413,24 @@ export default function Home() {
         <div className="max-w-[1024px] mx-auto px-6">
           <div className="grid md:grid-cols-2 gap-5">
             {/* Card 1 */}
-            <a href="#" className="block bg-transparent rounded-[20px] overflow-hidden hover:opacity-90 transition-opacity cursor-pointer group">
-              <div className="aspect-video relative overflow-hidden rounded-[20px]">
+            <a href="#" className="block bg-[#202020] rounded-[10px] overflow-hidden hover:opacity-90 transition-opacity cursor-pointer group pb-6">
+              <div className="aspect-video relative overflow-hidden">
                 <img 
                   src="/announce2.avif" 
                   alt="thBILL is LIVE"
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="pt-5 pb-2">
-                <div className="inline-block px-3 py-1.5 bg-[#003a40] rounded-md mb-3">
-                  <span className="text-[11px] text-[#86d8e0] uppercase tracking-wider font-medium">Announcements</span>
+              <div className="px-6 pt-6 flex flex-col gap-6">
+                <div className="flex flex-col gap-3">
+                  <div className="inline-block self-start px-3 py-1 bg-[#002b31] rounded-md">
+                    <span className="text-[11px] text-white uppercase tracking-wider font-normal">Announcements</span>
+                  </div>
+                  <h3 className="text-2xl font-normal text-white leading-tight line-clamp-2">
+                    Theo 推出机构级代币化货币市场基金 thBILL
+                  </h3>
                 </div>
-                <h3 className="text-[22px] md:text-2xl font-normal mb-3 text-white leading-tight">
-                  Theo 推出机构级代币化货币市场基金 thBILL
-                </h3>
-                <div className="flex items-center gap-2 text-[11px] text-gray-600 uppercase tracking-wide">
+                <div className="flex items-center gap-2 text-[11px] text-[#5f5f5f] uppercase tracking-wide">
                   <span>JUL 24, 2025</span>
                   <span>·</span>
                   <span>3 MINUTES</span>
@@ -437,22 +439,24 @@ export default function Home() {
             </a>
 
             {/* Card 2 */}
-            <a href="#" className="block bg-transparent rounded-[20px] overflow-hidden hover:opacity-90 transition-opacity cursor-pointer group">
-              <div className="aspect-video relative overflow-hidden rounded-[20px]">
+            <a href="#" className="block bg-[#202020] rounded-[10px] overflow-hidden hover:opacity-90 transition-opacity cursor-pointer group pb-6">
+              <div className="aspect-video relative overflow-hidden">
                 <img 
                   src="/announce2.avif" 
                   alt="thBILL is LIVE"
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="pt-5 pb-2">
-                <div className="inline-block px-3 py-1.5 bg-[#003a40] rounded-md mb-3">
-                  <span className="text-[11px] text-[#86d8e0] uppercase tracking-wider font-medium">Announcements</span>
+              <div className="px-6 pt-6 flex flex-col gap-6">
+                <div className="flex flex-col gap-3">
+                  <div className="inline-block self-start px-3 py-1 bg-[#002b31] rounded-md">
+                    <span className="text-[11px] text-white uppercase tracking-wider font-normal">Announcements</span>
+                  </div>
+                  <h3 className="text-2xl font-normal text-white leading-tight line-clamp-2">
+                    thBILL is Live: Theo's Institutional-Grade Tokenized Money Market Fund
+                  </h3>
                 </div>
-                <h3 className="text-[22px] md:text-2xl font-normal mb-3 text-white leading-tight">
-                  thBILL is Live: Theo's Institutional-Grade Tokenize...
-                </h3>
-                <div className="flex items-center gap-2 text-[11px] text-gray-600 uppercase tracking-wide">
+                <div className="flex items-center gap-2 text-[11px] text-[#5f5f5f] uppercase tracking-wide">
                   <span>JUL 24, 2025</span>
                   <span>·</span>
                   <span>3 MINUTES</span>
